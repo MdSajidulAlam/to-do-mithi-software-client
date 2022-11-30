@@ -37,6 +37,7 @@ async function run() {
             const result = await taskCollection.deleteOne(query)
             res.send(result)
         })
+        // editing task
 
         app.put('/task/:id', async (req, res) => {
             const id = req.params.id
