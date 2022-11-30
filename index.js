@@ -25,9 +25,7 @@ async function run() {
         app.get('/alltask', async (req, res) => {
             res.send({ hello: "response" })
         })
-        app.get('/tasks', async (req, res) => {
-            res.send({ hello: "response" })
-        })
+
 
         app.get('/mytasks', async (req, res) => {
             const email = req.query.email
