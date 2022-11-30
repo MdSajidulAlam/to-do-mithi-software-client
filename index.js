@@ -22,6 +22,9 @@ async function run() {
             const result = await taskCollection.insertOne(task)
             res.send({ success: true })
         })
+        app.get('/alltask', async (req, res) => {
+            res.send({ hello: "response" })
+        })
 
         app.get('/mytasks', async (req, res) => {
             const email = req.query.email
